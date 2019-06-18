@@ -1,13 +1,13 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
+    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
 
-import HelloWorld from './components/HelloWorld.vue'
+import SignIn from './components/SignIn.vue'
 import {store} from './store/store'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
@@ -16,7 +16,7 @@ export default {
   name: 'app',
    store,
   components: {
-    HelloWorld
+    SignIn
   }
 }
 </script>

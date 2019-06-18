@@ -5,21 +5,20 @@ Vue.use(Vuex)
 export const store  = new Vuex.Store({
     //ประกาศตัวแปร
     state:{
-        name : ""
+        email : ""
     },
     //กำหนดฟังก์ชั่น
     mutations:{
-        setName(state, name) {
-           
-            state.name = name
+        setEmail(state, email) {
+            state.email = email
         },
         test(){
-            
+
         }
     },
     //การดึงค่าไปใช้
     getters:{
-        getName : state => state.name
+        getEmail : state => state.email
     },
 })
 
