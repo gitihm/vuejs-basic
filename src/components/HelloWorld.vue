@@ -13,7 +13,16 @@
      text :''
       };
     },
-     
+     watch: {
+     text :{
+      handler: function () {
+        // console.log('Old User : ', oldUser)
+        // console.log('New User : ', newUser)
+        this.$store.commit('setName',this.text)
+      },
+      deep: true
+     }
+  },
     methods:{
       setName(){
         this.$store.commit('setName',this.text)
